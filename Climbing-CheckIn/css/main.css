@@ -1,0 +1,64 @@
+:root {
+  --main-color: #26FF74;
+  --main-color-hover: #73FFA6;
+
+  --sec-color: #0F12FF;
+  --sec-color-hover: #5C5FFF;
+
+  --tert-color: #FFD419;
+  --tert-color-hover: #FFE366;
+}
+
+/*////////////////////////////*/
+
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+html, body {
+  margin: auto 0;
+  width: 100%;
+  height: 100%;
+  
+}
+
+button {
+  cursor: pointer;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px #ccc;
+}
+
+button:active {
+  box-shadow: 0 5px #777;
+  transform: translateY(4px);
+  outline: none;
+}
+
+button:after, button:focus {
+  outline: none;
+}      
+
+    /**********/
+
+    #header-logo {
+      margin: 24px auto;
+      display: block;
+      width: 150px;
+      height: 150px;
+    }
+
+    h1 {
+      margin: 12px auto;
+    }
+
+    h2 {
+      margin: 6px auto;
+    }
+
+    h1, h2 {
+      text-align: center;
+      text-decoration: underline;
+    }
+
+        

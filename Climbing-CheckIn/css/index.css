@@ -1,0 +1,414 @@
+html, body {
+    overflow: hidden;
+}
+
+/***** Torso *****/
+
+#torso {
+    margin: 40px 24px 6px 24px;
+    display: flex;
+  }
+
+  #checkin-side {
+    flex: 5;
+    border-right: 1px solid black;
+    padding: 0px 12px;
+  }
+
+  #checkin-side h2 {
+    margin: 12px auto;
+    text-align: center;
+  }
+
+  #search-inputs {
+    display: flex;
+    justify-content: space-around;
+    margin: 16px 8px;
+  }
+
+  #search-inputs input {
+    margin: auto 4px;
+    flex: 2;
+    font-size: 16px;
+    line-height: 2;
+  }
+
+  #search-inputs input:focus {
+    outline: var(--main-color);
+  }
+
+  #search-inputs button {
+    flex: 1;
+    font-size: 16px;
+    transition: .15s;
+  }
+
+  #search-inputs button:hover {
+    color: white;
+    background-color: var(--main-color);
+  }
+
+  button[name=onlineWaivers] {
+    margin: 30px auto;
+    display: block;
+    font-size: 16px;
+    line-height: 3;
+    width: 40%;
+    transition: .15s;
+  }
+
+  button[name=onlineWaivers]:hover {
+    color: white;
+    background-color: var(--main-color);
+  }
+
+  button[name=purchaseButton] {
+    margin: 30px auto;
+    display: block;
+    font-size: 16px;
+    line-height: 3;
+    width: 60%;
+    transition: .15s;
+  }   
+  
+  button[name=purchaseButton]:hover {
+    color: white;
+    background-color: var(--main-color);
+  }
+
+  #customer-side {
+    flex: 3;
+    margin: auto;
+    padding: 0px 12px;
+  }
+
+  #customer-side * {
+    text-decoration: none;
+  }
+
+    #recCustDiv {
+      margin: 0px;
+      padding-right: 10px;
+      display: block;
+      overflow-y: scroll;
+      height: 450px;
+      border-radius: 6px;
+    }
+
+    #recCustDiv::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    #recCustDiv::-webkit-scrollbar-thumb {
+      background-color: #ccc;
+    }
+
+    #recCustDiv::-webkit-scrollbar-thumb:hover {
+      background-color: #ddd;
+    }
+
+    #recCustDiv::-webkit-scrollbar-track-piece {
+      background-color: #eee;
+    }
+
+    #recCustTitle {
+      margin: 12px auto;
+      text-decoration: underline;
+    }
+
+    .cust, #waiver {
+      border-radius: 6px;
+      display: flex;
+      border: 2px solid white;
+      transition: .15s;
+      background-color: sienna;
+    }
+
+    #waiver * {
+      text-align: center;
+    }
+
+    .cust:hover, #waiver:hover {
+      background-color: chocolate;
+    }
+
+      .privLead {
+        background-color: var(--main-color);
+      }
+
+      .privLead:hover {
+        background-color: var(--main-color-hover);
+      }
+
+      .privToproping {
+        background-color: var(--sec-color);
+      }
+
+      .privToproping:hover {
+        background-color: var(--sec-color-hover);
+      }
+
+      .privBouldering {
+        background-color: var(--tert-color);
+      }
+
+      .privBouldering:hover {
+        background-color: var(--tert-color-hover);
+      }
+
+      .privNone {
+        background-color: crimson;
+      }
+
+      .privNone:hover {
+        background-color: red;
+      }
+
+    .cust_link, .waiver_link {
+      border-radius: 6px;
+    }
+
+    .cust *, #waiver * {
+      color: white;
+    }
+
+    .cust:hover, #waiver:hover {
+      cursor: pointer;
+    }
+
+    .cust_prof, .waiver_prof {
+      display: block;
+      flex: 4;
+      width: 100%;
+      margin: 6px;
+      padding: 6px;
+    }
+
+    .cust_prof h2, .waiver_prof h2 {
+      margin: 2px auto;
+      flex: 1;
+    }
+
+    .cust_prof h3, .waiver_prof h3 {
+      margin: 0px auto;
+      text-decoration: none;
+    }
+
+    .cust_image, .waiver_image {
+      flex: 2;
+      margin: 6px;
+      padding: 6px;
+      background-color: white;
+      border-radius: 6px;
+    }
+
+    #img {
+      width: 100%;
+      height: 100%;
+      min-width: 100px;
+      min-height: 100px;
+      border-radius: 6px;
+    }
+
+    .cust_prof img, .waiver_prof img {
+      flex: 1;
+      border: 2px solid white;
+      border-radius: 4px;
+    }
+
+  /**********/
+
+  /***** search *****/
+
+  #search {
+    width: 100%;
+    height: 100%;
+  }
+
+  #search h1 {
+    margin: 12px auto;
+    display: block;
+    text-align: center;
+  }
+
+  #searchResults {
+    margin: 32px auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #searchResults a {
+    width: 400px;
+    margin: 12px;
+  }
+
+  .returnButton {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    font-size: 1.5em;
+    text-align: center;
+    border-radius: none;
+  }
+
+/***** Waiver *****/
+
+#waiver-container {
+    width: 60%;
+    height: 100%;
+    display: block;
+    margin: 48px auto;
+}
+
+#waiver-container h1 {
+    text-align: center;
+}
+
+#waiver-container h1, #waiver-container p {
+    color: black;
+}
+
+#waiver-start {
+    margin: 32px auto;
+    display: block;
+    width: 100%;
+    height: 60px;
+    font-size: 1.5em;
+    transition: .15s;
+}
+
+#waiver-start-link {
+    text-decoration: none;
+}
+
+#waiver-start:hover {
+    background-color: mediumseagreen;
+    text-decoration: none;
+    color: white;
+}
+
+.waiverDiv {
+    background-color: #ccc;
+    margin: 24px auto;
+    padding: 12px;
+}
+
+.flexWaiver {
+    display: flex;
+}
+
+.flexWaiver p {
+    margin: 8px 16px;
+    flex: 1;
+    display: block;
+}
+
+.flexWaiver p input {
+    margin: 0 auto;
+    padding: 4px;
+    display: block;
+    line-height: 2;
+    font-size: 1.5em;
+    border-radius: 6px;
+}
+
+.flexWaiver p select {
+    text-align: center;
+    margin: 4px auto;
+    display: block;
+    line-height: 2;
+    border-radius: 6px;
+}
+
+input[name=wStreet] {
+    width: 60%;
+}
+
+#wGender {
+    font-size: 1.5em;
+}
+
+#wState {
+    font-size: 1.2em;
+}
+
+#wCountry {
+    font-size: 1em;
+}
+
+.flexWaiver p label {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.wDate {
+    color: #777;
+}
+
+input[name=wEmail1], input[name=wEmail2], input[name=wEmName], input[name=wEmNumber] {
+    width: 70%;
+}
+
+.terms {
+    background-color: white;
+    padding: 8px;
+    height: 150px;
+    border-radius: 6px;
+    overflow-y: scroll;
+}
+
+input[type=checkbox] {
+    height: 20px;
+    width: 20px;
+    margin: 8px;
+}
+
+input[type=submit] {
+    bottom: 0;
+    width: 100%;
+    font-size: 2.5em;
+}
+
+/***** Media Queries *****/
+
+@media only screen and (max-width: 991px) {
+
+    html, body {
+        overflow: visible;
+    }
+
+    #torso {
+        display: block;
+    }
+
+    #checkin-side {
+        border-right: none;
+        margin-top: 48px;
+    }
+
+    #search-inputs {
+        margin: 36px 8px;
+    }
+
+    button[name=onlineWaivers] {
+        margin: 24px auto;
+    }
+
+    #recCustDiv {
+        margin: 36px auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #img {
+        max-width: 150px;
+        max-height: 150px;
+      }
+
+    #customer-side {
+        border-left: none;
+    }
+
+}

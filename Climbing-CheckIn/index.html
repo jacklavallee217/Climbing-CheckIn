@@ -1,0 +1,58 @@
+<HTML>
+
+  <head>
+    <title>Check In Screen</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <div id="headerspace"></div>
+      <a href="index.php"><img id="header-logo" src="img/metrorock-logo.png"/></a>
+      <div id="timeclockdiv">
+        <button id="timeclock">
+          <p id="timeclocktitle">Time Clock</p>
+          <img id="timeclockpic" src="img/timeclock.png"/>
+        </button>
+      </div>
+    </header>
+    
+    <h2>MetroRock Burlington</h2>
+    <div id="torso">
+      <div id="checkin-side">
+        <h2>Check In</h2>
+        <div id="search-inputs">
+          <input class="inputs" name="firstName" placeholder="First Name">
+          <input class="inputs" name="lastName" placeholder="Last Name">
+          <button class="inputs" name="nameSearch" type="submit">Search</button>
+        </div>
+        <button name="onlineWaivers" type="button">Online Waivers</button>
+        <div id="recCustDiv">
+          <div class="cust" id="cust1">
+            <h1>Ondra</h1>
+          </div>
+          <div class="cust" id="cust2">
+            <h1>Megos</h1>
+          </div>
+          <div class="cust" id="cust3">
+            <h1>Hayes</h1>
+          </div>
+        </div>
+      </div>
+      <div id="button-side">
+        <button name="purchaseButton" type="button">Purchases</button>
+        <button name="editProfileButton" type="button">Edit Profile</button>
+        <button name="programButton" type="button">Program</button>
+      </div>
+    </div>
+    <div id="legs">
+      <button name="systemReset" type="button">System Reset</button>
+      <p id=resetAdvice><i>May take a few minutes...</i></p>
+    </div>
+    <footer>
+    </footer>
+
+  </body>
+  <script src="js/app.js"></script>
+</HTMl>
